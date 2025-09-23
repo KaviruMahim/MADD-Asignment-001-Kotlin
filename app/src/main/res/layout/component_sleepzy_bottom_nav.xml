@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/sleepzyBottomNav"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@drawable/rounded_nav_bg"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp"
+        android:elevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="28dp"
+        android:clipToPadding="false">
+
+        <!-- Sleep Tracker -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/navSleepTracker"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_sleep"
+                android:tint="@android:color/white"
+                android:scaleType="centerInside"
+                android:contentDescription="Sleep Tracker"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <!-- Home -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/navHome"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_home"
+                android:tint="@android:color/white"
+                android:scaleType="centerInside"
+                android:contentDescription="Home"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <!-- Analytics -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/navAnalytics"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_analytics"
+                android:tint="@android:color/white"
+                android:scaleType="centerInside"
+                android:contentDescription="Analytics"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <!-- Profile -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/navProfile"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_profile"
+                android:tint="@android:color/white"
+                android:scaleType="centerInside"
+                android:contentDescription="Profile"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</merge>

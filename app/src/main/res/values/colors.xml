@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="charcoal">#121212</color>
+    <color name="charcoal_dark">#0D0D0D</color>
+
+    <!-- Moonlight accent (the warm yellow you used) -->
+    <color name="moon_accent">#E6E86A</color>
+    <color name="moon_accent_dark">#C8CA54</color>
+
+    <!-- Optional neutrals if you need them -->
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_90">#E6FFFFFF</color>
+</resources>

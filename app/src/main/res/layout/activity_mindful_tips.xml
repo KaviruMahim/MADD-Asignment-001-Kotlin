@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/moonlight_gradient">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toTopOf="@+id/tipsCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Mindful Sleep Tips"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tips Card -->
+    <LinearLayout
+        android:id="@+id/tipsCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_card_bg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pageTitle">
+
+        <!-- Card Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="8dp"
+                android:text="Why Understanding Sleep Cycles Can Transform Your Rest"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_image"
+                android:contentDescription="Tips Image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sleep_tips_img" />
+        </LinearLayout>
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:id="@+id/tipsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="When it comes to feeling well-rested, it’s not just about how many hours you spend in bed, but how your body moves through sleep cycles. A typical cycle lasts around 90 minutes and flows through different stages: light sleep, deep restorative sleep, and REM sleep—the stage where most dreaming occurs. Each of these stages plays a distinct role. Deep sleep helps your body repair tissues, boost immunity, and regulate hormones, while REM sleep is crucial for learning, problem-solving, and emotional balance.
+The challenge is that if you wake up in the middle of a cycle—say, during deep sleep—you’re far more likely to feel groggy, unfocused, and sluggish, even if you technically logged “enough” hours. On the other hand, waking at the end of a cycle often leaves you alert and refreshed. This is why some sleep experts suggest planning your bedtime and wake-up time around these natural 90-minute rhythms instead of focusing only on hitting a set number of hours.
+Learning to respect your body’s cycles means you’re working with your biology, not against it. And that can make a huge difference—not only for your morning energy, but also for long-term benefits like improved memory, mood stability, and better overall health."
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- NEXT button (sits between card and bottom nav) -->
+
+    <!-- Reusable Bottom Nav -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavInclude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/bottomNavInclude"
+        layout="@layout/bottom_nav_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="28dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Used to remove the “active pill” highlight on BottomNavigationView -->
+    <style name="NoActiveRipple">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+
+</resources>
