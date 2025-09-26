@@ -15,7 +15,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
         setContentView(R.layout.activity_forgot_password)
 
         auth = FirebaseAuth.getInstance()
-        findViewById<ImageView>(R.id.backArrow).setOnClickListener { finish() }
+        findViewById<ImageView>(R.id.backArrow)?.setOnClickListener { finish() }
 
         findViewById<Button>(R.id.resetButton).setOnClickListener {
             val email = findViewById<TextInputEditText>(R.id.emailInput).text?.toString()?.trim().orEmpty()
