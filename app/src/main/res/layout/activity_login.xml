@@ -7,15 +7,6 @@
     android:background="@drawable/moonlight_gradient">
 
     <!-- Back -->
-    <ImageView
-        android:id="@+id/backArrow"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:src="@drawable/ic_back"
-        android:contentDescription="Back"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="20dp"/>
 
     <!-- Logo -->
     <TextView
@@ -36,17 +27,17 @@
         android:id="@+id/titleText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="24dp"
+        android:lineSpacingExtra="4dp"
         android:text="Welcome back! Glad\nto see you, Again!"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
         android:textSize="22sp"
-        android:lineSpacingExtra="4dp"
-        app:layout_constraintTop_toBottomOf="@id/logoText"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="32dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoText" />
 
     <!-- Email -->
     <com.google.android.material.textfield.TextInputLayout
@@ -142,6 +133,8 @@
         android:textSize="16sp"
         android:textColor="@android:color/black"
         android:background="@drawable/rounded_light_button"
+        app:backgroundTint="@null"
+        android:backgroundTint="@null"
         app:layout_constraintTop_toBottomOf="@id/forgotPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

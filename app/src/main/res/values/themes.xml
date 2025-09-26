@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.MySleepzyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Core palette -->
-        <item name="colorPrimary">@color/charcoal</item>
-        <item name="colorPrimaryVariant">@color/charcoal_dark</item>
-        <item name="colorOnPrimary">@android:color/white</item>
-
-        <item name="colorSecondary">@color/moon_accent</item>
-        <item name="colorSecondaryVariant">@color/moon_accent_dark</item>
-        <item name="colorOnSecondary">@android:color/black</item>
-
+    <style name="Theme.MySleepzyApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- System bars -->
-        <item name="android:statusBarColor">@color/charcoal_dark</item>
-        <item name="android:navigationBarColor">@color/charcoal</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowBackground">@drawable/moonlight_gradient</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+
+        <!-- Typography defaults -->
+        <item name="android:fontFamily">sans-serif</item>
+
+        <!-- Component defaults -->
+        <item name="materialCardViewStyle">@style/App.Card</item>
+        <item name="bottomNavigationStyle">@style/BottomNavStyle</item>
     </style>
 
 </resources>

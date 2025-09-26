@@ -9,6 +9,6 @@
         android:centerX="50%"
         android:centerY="0%"
         android:startColor="#66FFFFFF"
-        android:endColor="#FF121212"
+        android:endColor="#000000"
         android:useLevel="false"/>
 </shape>

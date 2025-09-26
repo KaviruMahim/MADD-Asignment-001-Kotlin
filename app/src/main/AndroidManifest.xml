@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MySleepzyApp">
+        <activity android:name=".SleepHistoryActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -40,6 +43,12 @@
 
         <activity android:name=".LoginActivity"
             android:exported="false"/>
+        
+        <!-- Added authentication screens -->
+        <activity android:name=".RegisterActivity"
+            android:exported="false"/>
+        <activity android:name=".ForgotPasswordActivity"
+            android:exported="false"/>
 
         <activity android:name=".MindfulTipsActivity" />
 
@@ -53,6 +62,17 @@
         <activity android:name=".SetBedtimeActivity" />
         <activity android:name=".SetWakeupActivity" />
 
+        <!-- Profile screen -->
+        <activity android:name=".ProfileActivity" />
+
+        <!-- Account Information screen -->
+        <activity android:name=".AccountInfoActivity" android:exported="false" />
+
+        <!-- Single-activity host with fragments and bottom nav -->
+        <activity android:name=".MainHostActivity" />
+
+        <!-- Music player screen -->
+        <activity android:name=".MusicPlayerActivity" android:exported="false" />
 
 
 

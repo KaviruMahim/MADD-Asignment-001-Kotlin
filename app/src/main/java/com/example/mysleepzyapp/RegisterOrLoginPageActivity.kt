@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.ImageView
 
 class RegisterOrLoginPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +16,9 @@ class RegisterOrLoginPageActivity : AppCompatActivity() {
         val loginButton = findViewById<Button>(R.id.loginButton)
         val registerButton = findViewById<Button>(R.id.registerButton)
         val guestText = findViewById<TextView>(R.id.guestText)
+        val back = findViewById<ImageView>(R.id.backArrow)
+
+        back?.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
 
         loginButton.setOnClickListener {
             Toast.makeText(this, "Login Clicked", Toast.LENGTH_SHORT).show()
@@ -23,13 +27,15 @@ class RegisterOrLoginPageActivity : AppCompatActivity() {
         }
 
         registerButton.setOnClickListener {
-            Toast.makeText(this, "Register Clicked", Toast.LENGTH_SHORT).show()
-
+            // Navigate to Register screen
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
 
         guestText.setOnClickListener {
-            Toast.makeText(this, "Continue as Guest", Toast.LENGTH_SHORT).show()
-            // TODO: Go to Home/Dashboard
+            // Continue without authentication
+            val i = Intent(this, SleeptimeDashboardActivity::class.java)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(i)
         }
     }
 }

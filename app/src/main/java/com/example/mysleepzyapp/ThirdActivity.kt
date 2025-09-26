@@ -11,8 +11,8 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
-        // Back arrow returns to previous screen
-        findViewById<ImageView>(R.id.backArrow).setOnClickListener {
+        // Back arrow returns to previous screen (guard in case it's not in this layout)
+        findViewById<ImageView>(R.id.backArrow)?.setOnClickListener {
             finish()
         }
 

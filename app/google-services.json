@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1052627172871",
+    "project_id": "mysleepzyapp",
+    "storage_bucket": "mysleepzyapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052627172871:android:039bfa9ce69493ef85b4a2",
+        "android_client_info": {
+          "package_name": "com.example.mysleepzyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7jtR16BpfNuj4gMxrcfaYLGJXTnk_zdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

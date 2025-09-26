@@ -11,14 +11,14 @@ class ForthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forth)
 
-        // Back arrow returns to previous screen
-        findViewById<ImageView>(R.id.backArrow).setOnClickListener {
+        // Back arrow returns to previous screen (guard in case it's not present in this layout)
+        findViewById<ImageView>(R.id.backArrow)?.setOnClickListener {
             finish()
         }
 
-        // Continue button (later go to dashboard or next feature)
+        // Continue button -> go to Register/Login choice screen
         findViewById<Button>(R.id.continueButton).setOnClickListener {
-            val intent = Intent(this, DashboardActivity::class.java)
+            val intent = Intent(this, RegisterOrLoginPageActivity::class.java)
             startActivity(intent)
         }
     }

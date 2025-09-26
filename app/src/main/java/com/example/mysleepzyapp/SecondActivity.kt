@@ -11,7 +11,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        findViewById<ImageView>(R.id.backArrow).setOnClickListener {
+        findViewById<ImageView>(R.id.backArrow)?.setOnClickListener {
             finish()
         }
 

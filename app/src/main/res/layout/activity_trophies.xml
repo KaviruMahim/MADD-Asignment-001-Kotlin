@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/moonlight_gradient">
+    android:background="@color/bg">
 
     <!-- Back Arrow -->
     <ImageView
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="60dp"/>
+        android:layout_marginTop="56dp"/>
 
     <!-- Scrollable grid: 2 columns -->
     <ScrollView
@@ -48,6 +48,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"
             android:paddingBottom="16dp">
 
             <!-- Grid with 2 columns -->
@@ -67,14 +68,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌙"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -100,14 +101,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👁️"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -133,14 +134,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🦉"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -166,14 +167,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😴"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -199,14 +200,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📚"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -232,14 +233,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -265,14 +266,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌠"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -298,14 +299,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🧘"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -331,14 +332,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😊"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -364,14 +365,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_card_bg"
+                    android:background="@drawable/bg_card"
                     android:padding="14dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@android:drawable/ic_menu_info_details"
-                        android:contentDescription="Trophy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🪥"
+                        android:textSize="40sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -398,16 +399,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@drawable/rounded_card_bg"
+                android:background="@drawable/bg_card"
                 android:padding="18dp"
                 android:layout_marginTop="8dp">
 
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:src="@android:drawable/ic_menu_info_details"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="Grand Trophy"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👑"
+                    android:textSize="48sp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"

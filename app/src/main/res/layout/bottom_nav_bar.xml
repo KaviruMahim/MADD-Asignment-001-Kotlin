@@ -5,7 +5,7 @@
     android:id="@+id/bottomNav"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/rounded_nav_bg"
+    android:background="@color/bg"
     android:elevation="8dp"
     app:menu="@menu/bottom_nav_menu"
     app:itemIconTint="@color/nav_item_colors"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sleep_goal_options">
+        <item>Get up early</item>
+        <item>Sleep 8 hours</item>
+        <item>Improve consistency</item>
+        <item>Reduce screen time</item>
+        <item>Meditate before bed</item>
+    </string-array>
+
+    <string-array name="repeat_options">
+        <item>Never</item>
+        <item>Once</item>
+        <item>Every day</item>
+        <item>Weekdays</item>
+        <item>Weekends</item>
+    </string-array>
+
+    <string-array name="alarm_sound_options">
+        <item>Good Morning</item>
+        <item>Soft Chime</item>
+        <item>Gentle Waves</item>
+        <item>Birdsong</item>
+        <item>Piano Calm</item>
+    </string-array>
+</resources>
